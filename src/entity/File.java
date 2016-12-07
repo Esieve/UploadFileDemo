@@ -1,6 +1,8 @@
 package entity;
 
-public class File {
+import java.io.Serializable;
+
+public class File implements Serializable{
 	private int id;
 	private String userName;
 	private String fileName;

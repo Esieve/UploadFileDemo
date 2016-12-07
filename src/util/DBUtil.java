@@ -9,7 +9,7 @@ public class DBUtil {
 	private static final String USER = "root";
 	private static final String PWD = "1011";
 	private static Connection CONN = null;
-	static{
+	static {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			CONN = DriverManager.getConnection(URL, USER, PWD);
@@ -18,6 +18,7 @@ public class DBUtil {
 			e.printStackTrace();
 		}
 	}
+
 	public static Connection getCONN() {
 		return CONN;
 	}

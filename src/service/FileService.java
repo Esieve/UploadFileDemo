@@ -18,7 +18,7 @@ public class FileService {
 		pstmt.setString(1, file.getUserName());
 		pstmt.setString(2, file.getFileName());
 		pstmt.setBytes(3, file.getFileContent());
-		pstmt.execute();
+		pstmt.executeUpdate();
 		if (conn != null) {
 			conn.close();
 		}
